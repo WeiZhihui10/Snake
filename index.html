@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index.css"></link>
+		<script type="text/javascript" src="js/snake.js" ></script>
+		<script type="text/javascript" src="js/jquery-1.11.1.min.js" ></script>
+		<script type="text/javascript" src="js/IndexDB.js" ></script>
+	</head>
+	<body>
+		<div class="menu">
+			<button id="start">开始游戏</button>
+			<button id="rank">难度等级</button>
+			<button id="rankingList" onclick="showRankingList()">得分记录</button>
+		</div>
+		<div class="content">
+			<div class="cont-lef">
+				<span>难度等级:</span>
+				<ul>
+					<li><button id="btn1" class="check">入门</button></li>
+					<li><button id="btn2">简单</button></li>
+					<li><button id="btn3">一般</button></li>
+					<li><button id="btn4">困难</button></li>
+				</ul>
+			</div>
+			<div class="cont-cont">
+				<div>
+					得分：<span id="fraction">0</span>
+				</div>
+				<canvas id="myCanvas" width="600px" height="600px"></canvas>
+			</div>
+			<div class="cont-right">
+			 	<span>得分记录:</span>
+			 	<div id="myFraction"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/speed.js" ></script>
+	</body>
+</html>
